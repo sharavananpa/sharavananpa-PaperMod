@@ -1,3 +1,146 @@
-baseURL: http://example.org/
+baseURL: https://sharavananpa.github.io/
 languageCode: en-us
-title: My New Hugo Site
+title: sharavananpa
+paginate: 5
+theme: "PaperMod"
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+pygmentsUseClasses: true
+# Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
+
+# googleAnalytics: UA-123-45
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Search
+          url: search
+          weight: 10
+        - name: Blog (archive)
+          url: archives
+          weight: 20
+        - name: Photos
+          url: photos
+          weight: 30
+        - name: Software Projects
+          url: projects
+          weight: 40
+        - name: My Music
+          url: music
+          weight: 50
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  keywords: [sharavanan, music, software]
+  defaultTheme: auto
+  copyright: "**sharavanan**"
+  ShowShareButtons: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowCodeCopyButtons: true
+  ShowFullTextinRSS: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  ShowRssButtonInSectionTermList: true
+  ShareButtons: []
+  hideFooter: false
+
+  profileMode:
+    enabled: true
+    title: பா. சரவணன்
+    subtitle: Hola! This is **sharavanan** from down *<ins><a href="https://en.wikipedia.org/wiki/Tamil_Nadu" target="_blank">south of India</a>*</ins>. <br> I build `softwares` and make bad `music`. <br> Check 'em out if you're free! <hr style="border:1px solid dodgerblue">
+    buttons:
+      - name: Posts
+        url: posts
+      - name: Tags
+        url: tags
+      - name: Music
+        url: music
+      - name: Projects
+        url: projects
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/sharavananpa"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/sharavananpa/"
+    - name: twitter
+      url: "https://twitter.com/sharavananpa"
+    - name: email
+      url: "mailto:sharavananpa@gmail.com?subject=Hola!"
+
+  label:
+    text: "sharavananpa"
+    # icon: /apple-touch-icon.png
+    # iconHeight: 20
+
+  assets:
+    disableHLJS: false
+    disableFingerprinting: false
+    theme_color: blue
+    favicon: "/favicon/favicon.ico"
+    favicon16x16: "/favicon/favicon-16x16.png"
+    favicon32x32: "/favicon/favicon-32x32.png"
+    apple_touch_icon: "/favicon/apple-touch-icon.png"
+    # safari_pinned_tab: "<link / abs url>"
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  # highlight:
+  #   # noClasses: false
+  #   # anchorLineNos: false
+  #   # # codeFences: true
+  #   # guessSyntax: true
+  #   # lineNos: true
+  #   # # style: monokai
+
+privacy:
+  vimeo:
+    disabled: false
+    simple: true
+
+  twitter:
+    disabled: false
+    enableDNT: true
+    simple: true
+
+  instagram:
+    disabled: false
+    simple: true
+
+  youtube:
+    disabled: false
+    privacyEnhanced: true
