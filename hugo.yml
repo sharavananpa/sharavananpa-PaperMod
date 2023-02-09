@@ -32,8 +32,8 @@ languages:
         - name: Search
           url: search
           weight: 10
-        - name: Blog (archive)
-          url: archives
+        - name: Posts
+          url: posts
           weight: 20
         - name: Photos
           url: photos
@@ -54,8 +54,8 @@ outputs:
 params:
   env: production
   keywords: [sharavanan, music, software]
-  defaultTheme: auto
-  copyright: "**sharavanan**"
+  defaultTheme: dark
+  copyright: "sharavanan"
   ShowShareButtons: true
   ShowReadingTime: true
   ShowPostNavLinks: true
@@ -70,10 +70,10 @@ params:
   profileMode:
     enabled: true
     title: பா. சரவணன்
-    subtitle: Hola! This is **sharavanan** from down *<ins><a href="https://en.wikipedia.org/wiki/Tamil_Nadu" target="_blank">south of India</a>*</ins>. <br> I build `softwares` and make bad `music`. <br> Check 'em out if you're free! <hr style="border:1px solid dodgerblue">
+    subtitle: Hola! This is **Sharavanan** from down *<ins><a href="https://en.wikipedia.org/wiki/Tamil_Nadu" target="_blank">south of India</a>*</ins>. <br> I build `softwares` and make bad `music`. <br> Check 'em out if you're free! <hr style="border:1px solid dodgerblue">
     buttons:
-      - name: Posts
-        url: posts
+      - name: Archive
+        url: archives
       - name: Tags
         url: tags
       - name: Music
@@ -85,11 +85,11 @@ params:
     - name: github
       url: "https://github.com/sharavananpa"
     - name: linkedin
-      url: "https://www.linkedin.com/in/sharavananpa/"
+      url: "https://www.linkedin.com/in/sharavananpa"
     - name: twitter
       url: "https://twitter.com/sharavananpa"
     - name: email
-      url: "mailto:sharavananpa@gmail.com?subject=Hola!"
+      url: "mailto:sharavananpa@gmail.com?subject=Hello there!"
 
   label:
     text: "sharavananpa"
@@ -104,7 +104,7 @@ params:
     favicon16x16: "/favicon/favicon-16x16.png"
     favicon32x32: "/favicon/favicon-32x32.png"
     apple_touch_icon: "/favicon/apple-touch-icon.png"
-    # safari_pinned_tab: "<link / abs url>"
+    safari_pinned_tab: "/favicon/favicon-16x16.png"
 
   fuseOpts:
     isCaseSensitive: false

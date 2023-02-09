@@ -3,7 +3,10 @@
     {{- if site.Copyright }}
     <span>{{ site.Copyright | markdownify }}</span>
     {{- else }}
-    <span>&copy; {{ now.Month }} {{ now.Year }} <a href="{{ "" | absLangURL }}">{{ site.Title }}</a>&nbsp;💙</span>
+    <span style="font-weight: bold;">
+        💙&nbsp;Brought to you by <a href="https://www.linkedin.com/in/sharavananpa/"
+            target="_blank">Sharavanan</a>&nbsp;💙
+    </span>
     {{- end }}
 </footer>
 {{- end }}
